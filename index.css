@@ -1,0 +1,74 @@
+body {
+  text-align: center;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  background: -moz-linear-gradient(top, #1e5799 10%, #2989d8 31%, #207cca 64%, #7db9e8 89%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #1e5799 10%,#2989d8 31%,#207cca 64%,#7db9e8 89%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #1e5799 10%,#2989d8 31%,#207cca 64%,#7db9e8 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+div {
+  background: transparent;
+}
+p {
+  font-size: 1.5rem;
+}
+.column {
+  width: auto;
+  height: 100%;
+  border-radius: 5%;
+  padding: 2px 2px 2px 2px;
+}
+.column img {
+  height: 100%;
+  width: auto;
+  border-radius: 5%;
+}
+.container {
+  display: grid;
+  grid-template-columns: 0.4fr 0.3fr 0.3fr;
+/*   grid-template-rows: auto 25px auto 25px auto 25px auto 25px auto 25px auto; */
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
+}
+.grid {
+  color: #fff;
+  padding: 25px;
+  font-size: 3rem;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, inset 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, inset 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.header {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  width: 80%;
+  margin-left: 10%;
+}
+.hero {
+  grid-column: 3 / 4;
+  grid-row-start: 3 / 4;
+  min-height: 300px;
+}
+.content {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  min-height: 130px;
+  height: 130px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  justify-content: flex-end;
+}
+.wrapper {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  min-height: 300px;
+  height: 300px;
+}
+.buttons {
+  height: 40%;
+  width: auto;
+}
+.footer {
+  grid-column: 1 / 4;
+  grid-row: 6 / 7;
+}  
