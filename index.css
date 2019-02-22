@@ -9,9 +9,6 @@ body {
 div {
   background: transparent;
 }
-p {
-  font-size: 1.5rem;
-}
 .column {
   width: auto;
   height: 100%;
@@ -37,22 +34,29 @@ p {
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, inset 5px 5px 15px 5px rgba(0,0,0,0); 
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, inset 5px 5px 15px 5px rgba(0,0,0,0);
 }
-.header {
-  grid-column: 1 / 4;
+.header.one {
+   grid-column: 1 / 4;
+   grid-row: 1 / 2;
+   width: 20%;
+   margin-left: 10%;
+ }
+.header.two {
+  grid-column: 2 / 4;
   grid-row: 1 / 2;
   width: 80%;
   margin-left: 10%;
 }
 .hero {
   grid-column: 3 / 4;
-  grid-row-start: 3 / 4;
+  grid-row: 2 / 4;
   min-height: 300px;
+  font-size: 1rem;
 }
 .content {
   grid-column: 1 / 3;
   grid-row: 2 / 3;
-  min-height: 130px;
-  height: 130px;
+  min-height: 180px;
+  height: 180px;
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
@@ -61,8 +65,8 @@ p {
 .wrapper {
   grid-column: 1 / 3;
   grid-row: 2 / 3;
-  min-height: 300px;
-  height: 300px;
+  min-height: 380px;
+  height: 380px;
 }
 .buttons {
   height: 40%;
@@ -71,4 +75,5 @@ p {
 .footer {
   grid-column: 1 / 4;
   grid-row: 6 / 7;
+  margin: 5% 10% 0 10%;
 }  
